@@ -6,4 +6,4 @@ from django.template.context import RequestContext
 
     
 def home(request):
-    return render(request, "core/home.html", {'user': 'Gabriel'}, content_type="text/css")
+    return render(request, "core/home.html", {'user': 'Gabriel'})
