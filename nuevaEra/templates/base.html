@@ -34,10 +34,10 @@
               </li>
               
             </ul>
-            <form class="navbar-form pull-right">
+            <form class="navbar-form pull-right" method="post" action=".">{% csrf_token %}
               <input class="span2" type="text" placeholder="User">
               <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
+              <button type="submit" class="btn">Loguearse</button>
             </form>
             <ul class="nav pull-right"><li><a href="{% url core_registrar %}">Registrarse</a></li></ul>
           </div><!--/.nav-collapse -->

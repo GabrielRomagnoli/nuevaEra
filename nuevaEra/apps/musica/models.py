@@ -13,7 +13,7 @@ class Tema(models.Model):
     artista = models.ForeignKey(Artista)
     titulo = models.CharField(blank=False, max_length=100) 
     datetime = models.DateTimeField(blank=True, auto_now_add=True)
-    link = models.CharField(blank=False, max_length=300)
+    audio = models.FileField(upload_to="temas", null=True, blank=True)
     
     def __unicode__(self):
         return self.titulo
