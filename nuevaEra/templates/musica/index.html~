@@ -8,7 +8,7 @@
     			</tr>
     		{% for tema in temas %}
     			<tr>
-    				<td><a href="{% url musica_detalle tema.id %}" >{{ tema.titulo }}</a></td><td>{{ tema.artista }}</td>
+    				<td><a href="{% url musica_detalle %}" >{{ tema.titulo }}</a></td><td>{{ tema.artista }}</td>
     			</tr>
     		{% endfor %}
     	</table>

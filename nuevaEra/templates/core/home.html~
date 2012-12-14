@@ -2,7 +2,7 @@
 {% block title %}Este es el home{% endblock %}
 {% block content %}
 
-	{% if user.is_authenticated %} 
+	{% if logueado %} 
 		Bienvenido {{ user }} ! 
 	{% else %} 
 		Logueate. 

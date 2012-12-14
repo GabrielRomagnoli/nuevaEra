@@ -110,6 +110,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    #django-flash
+    #'djangoflash.middleware.FlashMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -120,7 +122,9 @@ TEMPLATE_CONTEXT_PROCESSORS = (
             "django.core.context_processors.static",
             "django.contrib.messages.context_processors.messages",
             "core.context_processor.static_url",
-            "core.context_processor.debug"            
+            "core.context_processor.debug"    
+            #django-flash
+            #'djangoflash.context_processors.flash',
 )
 
 ROOT_URLCONF = 'nuevaEra.urls'
