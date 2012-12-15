@@ -28,6 +28,4 @@ def detalle(request, tema_id):
     
     return render(request, "musica/detalle.html", {'tema': tema, 'form' : form })
 
-def comentar(request):
-    return render(request, "musica/comentar.html", {'user': 'Gabriel'})
     

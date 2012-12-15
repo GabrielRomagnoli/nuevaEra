@@ -41,7 +41,7 @@
     			<th class="comentario">Usuario: {{ comentario.usuario }}</th>
     		</tr>		
 			<tr>
-    			<th>Comento</th>
+    			<th>Comento:</th>
     		</tr>		
 			<tr>
 				<td>{{ comentario.contenido }}</td>
